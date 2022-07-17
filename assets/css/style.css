@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.options{
+    position: fixed;
+    top: 150px;
+    right: 0;
+    background-color: white;
+    width: 40px;
+    height: 80px;
+    z-index: 10;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    line-height: 40px;
+}
+.options ul li{
+    margin-bottom: 5px;
+}
+.options ul li i{
+    color: #666;
+    font-size: 20px;
+}
+/* start header */
+.header{
+    background-image: url(../img/shutterstock_277750193.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    overflow: hidden;
+    padding-top: 20px;
+}
+.logo{
+    width: 30%;
+    float: left;
+}
+.logo img{
+    width: 50%;
+}
+.nav{
+    width: 50%;
+    float: right;
+    margin-top: 30px;
+    margin-right: 0;
+}
+.nav ul li{
+    display: inline-block;
+    padding-left: 20px;
+}
+.nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.nav ul li a:hover{
+    color: #e2785d;
+    transition: 0.5s;
+}
+.home{
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+}
+.home img{
+    width: 25%;
+}
+.home h1{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.home h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.home a{
+    padding: 15px 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-family: 'Alegreya', sans-serif;
+}
+.home .btn-learn{
+    background-color: #c1ab85;
+    color: white;
+    margin-right: 10px;
+}
+.home .btn-learn:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+.home .btn-book{
+    background-color: white;
+    color: black;
+}
+/*  End header */
+/* Start about section */
+.about{
+    margin-top: 60px;
+}
+.about .container{
+    overflow: hidden;
+}
+.about .img{
+    float: left;
+    width: 40%;
+}
+.about img{
+    width: 100%;
+}
+.about .about-content{
+    float: right;
+    width: 50%;
+    padding-top: 60px;
+    margin-left: 15px;
+}
+.about-content h2{
+    color: #253048;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 15px;
+}
+.about-content h4{
+    color: #c1ab85;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.about-content p{
+    color: rgb(104, 104, 104);
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.about-content ul li{
+    margin-bottom: 15px;
+}
+.about-content ul li i,.map ul li i{
+    background-color: #c1ab85;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    /* padding: 10px 0; */
+    line-height: 40px;
+    /* لو عندي عنصر بدي اجيبه بالنص من ناحية الطول وعنده ارتفاع بعطي لاين هايث نفس الإرتفاغ */
+}
+.about-content ul li span{
+    padding-left: 10px;
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+}
+/* End about Section */
+/* Start like Section */
+.like{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.like .container{
+    overflow: hidden;
+}
+.like-content{
+    float: left;
+    width: 60%;
+}
+.like .img{
+    float: right;
+    width: 40%;
+}
+.like .img img{
+    width: 100%;
+}
+.like h2{
+    color: #253048;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 15px;
+}
+.like h4{
+    color: #c1ab85;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.like p{
+    color: rgb(104, 104, 104);
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 15px;
+    width: 90%;
+}
+.like ul li{
+    margin-bottom: 15px;
+}
+.like ul li i{
+    color: #c1ab85;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.like ul li span{
+    color: rgb(104, 104, 104);
+}
+
+/* End like Section */
+/* background */
+.background{
+    background-image: url(../img/shutterstock_280369721.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* start menu section */
+.menu{
+    padding-top: 60px;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding-bottom: 40px;
+}
+.menu h2{
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #253048;
+    margin-bottom: 10px;
+}
+.menu h4{
+    color: #c1ab85;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.menu-content{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.menu-box{
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.menu-box.mg{
+    margin: 0 5%;
+}
+.menu-box img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.menu-box h5{
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #253048;
+    font-size: 18px;
+}
+.menu-box p{
+    color: rgb(104, 104, 104);
+    margin-top: 10px;
+}
+.menu a{
+    background-color: #c1ab85;
+    color: white;
+    text-transform: capitalize;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+/* .menu a:hover{
+    margin-right: 10px;
+} */
+/* end menu section */
+/* start testimonials */
+.testimonials{
+    text-align: center;
+    color: white;
+    background-image: url(../img/shutterstock_277750193.jpg);
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+}
+.testimonials-text{
+    padding-top: 120px;
+}
+.testimonials i{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.testimonials h2{
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.testimonials p{
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.testimonials h6{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.testimonials span{
+    color: #aeb1b3;
+}
+/* end testimonials */
+/* start map */
+.map{
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+.map .container{
+    overflow: hidden;
+}
+.map-content{
+    width: 50%;
+    float: left;
+}
+.map-content h2{
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #253048;
+    margin-bottom: 10px;
+}
+.map-content p{
+    color: rgb(104, 104, 104);
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 18px;
+    width: 90%;
+}
+.map-content h3{
+    color: rgb(104, 104, 104);
+    font-size: 20px;
+    font-weight: normal;
+}
+.map ul li{
+    margin-bottom: 15px;
+}
+.map ul li span{
+    margin-left: 10px;
+    color: rgb(104, 104, 104);
+}
+.map-map{
+    width: 50%;
+    float: left;
+}
+/* end map */
+/* start footer */
+.footer2{
+    background-color: #353330;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.footer2 .container{
+    padding-top: 40px;
+}
+.footer2 p{
+    margin: 30px 0;
+    color:rgb(119, 119, 119);
+}
+.footer2 ul li{
+    display: inline-block;
+    background-color: #403d38;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: color;
+}
+
+.footer2 ul li i{
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+    color: #8c8a86;
+}
+.footer2 ul li:hover{
+    background-color: #3b5998;
+    transition: 0.3s;
+}
+.footer2 ul li:hover i{
+    color:white;
+    transition: 0.3s;
+}
+/* small screen */
+@media (min-width:320px) and (max-width:922px){
+    .options{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .nav{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .nav ul li a{
+        font-size: 24px;
+    }
+    .home{
+        margin-top: 40px;
+    }
+    .home h1{
+        font-size: 30px;
+    }
+    .home h2{
+        font-size: 30px;
+    }
+    .home .btn{
+        font-size: 20px;
+    }
+    .about .img{
+        float: none;
+        width: 100%;
+    }
+    .about .about-content{
+        float: none;
+        width: 100%;
+    }
+    .about-content h2,.like h2,.map-content h2{
+        font-size: 24px;
+    }
+    .about-content h4,.like h4{
+        font-size: 22px;
+    }
+    .about-content p,.like p{
+        font-size: 20px;
+    }
+    .about-content ul li span,.map ul li span{
+        font-size: 20px;
+    }
+    .like-content{
+        float: none;
+        width: 100%;
+    }
+    .like .img{
+        float: none;
+        width: 100%;
+    }
+    .background{
+        height: 30vh;
+    }
+    .menu-box{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .menu-box.mg{
+        margin: 0;
+    }
+    .menu-box h5{
+        font-size: 24px;
+    }
+    .menu-box p{
+        font-size: 22px;
+    }
+    .testimonials{
+        height: 500px;
+    }
+    .map-content{
+        width: 100%;
+        float: none;
+    }
+    .map-map{
+        float: none;
+        width: 100%;
+    }
+    .map-content p{
+        font-size: 20px;
+    }
+    .map-content h3{
+        font-size: 22px;
+    }
+}
+
